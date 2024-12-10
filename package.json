@@ -1,0 +1,68 @@
+{
+  "name": "ab-diff-checker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^5.5.1",
+    "@codemirror/lang-css": "^6.3.0",
+    "@codemirror/lang-html": "^6.4.9",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-json": "^6.0.1",
+    "@codemirror/lang-python": "^6.1.6",
+    "@codemirror/lang-yaml": "^6.1.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@uiw/codemirror-theme-dracula": "^4.23.5",
+    "@uiw/codemirror-theme-vscode": "^4.23.5",
+    "@uiw/react-codemirror": "^4.23.5",
+    "antd": "^5.21.3",
+    "antd-style": "^3.7.0",
+    "codemirror": "^5.65.18",
+    "install": "^0.13.0",
+    "js-yaml": "^4.1.0",
+    "npm": "^10.9.0",
+    "prismjs": "^1.29.0",
+    "react": "^18.3.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-diff-view": "^3.2.1",
+    "react-diff-viewer-continued": "^3.4.0",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-router-dom": "^6.27.0",
+    "react-scripts": "^5.0.1",
+    "react-string-replace": "^1.1.1",
+    "regexr": "^2.0.4",
+    "remark-gfm": "^4.0.0",
+    "tippy.js": "^6.3.7",
+    "unidiff": "^1.0.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "GENERATE_SOURCEMAP=false react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.13"
+  }
+}

@@ -1,0 +1,34 @@
+.regex-part {
+    font-weight: bold;
+    color: #007bff; /* Highlighted color for regex components */
+    cursor: pointer; /* Pointer cursor for hints */
+}
+
+.regex-display {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.regex-tester {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.regex-tester h1 {
+    text-align: center;
+}
+
+.regex-tester input,
+.regex-tester textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#flags {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+}

@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-areas, .diff-areas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-area {
+    width: 48%;
+}
+
+.diff-area {
+    width: 48%;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.added-container {
+    background-color: #e6ffed; /* Green background for added lines container */
+}
+
+.removed-container {
+    background-color: #ffeef0; /* Red background for removed lines container */
+}
+
+.added {
+    color: green; /* Green text for added lines */
+}
+
+.removed {
+    color: red; /* Red text for removed lines */
+    text-decoration: line-through; /* Strikethrough effect for removed lines */
+}
+
+.diff-line {
+    margin: 2px 0;
+}
+
+.CodeMirror {
+    height: 100% !important;  /* Ensure CodeMirror takes up full height */
+    display: flex;
+    flex-direction: column;
+}
+
+.CodeMirror-scroll {
+    overflow-y: auto !important;
+    height: auto !important;  /* Let the scroll grow naturally */
+    min-height: 100% !important;  /* Make sure it takes full height */
+}
+
+.CodeMirror-sizer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;  /* Ensure content starts at the top */
+    padding-bottom: 0 !important;
+}
+
+.CodeMirror-lines {
+    display: block;
+}
+
+.CodeMirror-line {
+    vertical-align: top;
+}
+.cm-content {
+    text-align: left !important; /* Ensure the content is left-aligned */
+}
+
+.diff-output {
+    text-align: left;
+}
+
+/* In your styles.css */
+.diff-container {
+    width: 100%;
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;  /* Add scroll if content exceeds container */
+    border: 1px solid #d9d9d9;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    position: relative;
+}
+
+.floating-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1890ff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button:hover {
+    background-color: #40a9ff;
+}
+
+header {
+    margin-top: 0 !important;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.ant-layout-content {
+    padding: 0 !important;  /* Remove the padding */
+    margin-top: 0 !important;  /* Remove the margin */
+}
